@@ -1,0 +1,77 @@
+﻿body {
+text-align:center;	
+padding: 20px;
+}
+
+
+h1 {
+ display:inline-block;
+ position: relative;
+ font-family:"verdana" ;
+}
+
+h1::after,h1::before{
+content:'';
+position: absolute;
+width: 120px;
+height: 1px;
+background-color:black;
+
+}
+
+h1::before{
+  left:-140px
+}
+
+h1::after{
+  right:-140px
+}
+
+
+.grid-container {
+  display: grid;
+  width: 80%;
+  
+  max-width: 900px;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-gap: 10px 
+
+
+		
+		
+		
+		
+
+
+}
+
+
+
+
+.contenedor {
+  position: relative;
+  height: 100px;
+  width: 290px;
+  margin: 50px 80px;
+  float: left;
+}
+
+.contenedor img {
+  position: absolute;
+  left: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.contenedor img.top:hover {
+  opacity: 0;
+}
+
+
+img{
+   width:250px;
+   height:150px;
+} 
+
+
+
